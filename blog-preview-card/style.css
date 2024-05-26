@@ -1,0 +1,108 @@
+
+:root {
+    --main-color: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+    --font-family: "Figtree", sans-serif;
+}
+
+body {
+    background: var(--main-color);
+    font-family: var(--font-family);
+    font-size: 16px;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid #111;
+    border-radius: 20px;
+    padding: 24px;
+    width: 384px;
+    height: 522px;
+    box-shadow: 8px 8px 0 0 #000;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        margin: 30px;
+    }
+}
+
+.card:hover {
+    box-shadow: 16px 16px 0 0 #000;
+    transform: translate(-8px, -8px);
+    transition: all 0.1s ease-out .15s;
+}
+
+.card > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.category {
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    align-items: center;
+    padding: 4px 12px;
+    margin: 24px 0 12px 0;
+    border-radius: 4px;
+    width: 82px;
+    background: var(--main-color);
+    line-height: 150%;
+}
+
+.date {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 2px;
+    line-height: 150%;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 150%;
+    margin-top: 12px;
+}
+
+.title:hover {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 150%;
+    margin-top: 12px;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.description {
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--grey);
+    margin-top: 12px;
+    padding-right: 24px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.author > img {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
